@@ -1,0 +1,33 @@
+/* contendor -> header / main / footer */
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: 200px;
+    grid-gap: 16px;
+
+    /* NEW para el padre */
+    /* Los hijos del Grid */
+    justify-items: center;
+    align-items: center;
+
+    /* NEW para el padre */
+    /* AUTO-gestionar el propio Grid */
+    justify-content: center;
+}
+
+header{
+    align-self: start;
+}
+
+main{
+    /* NEW para hijos */
+    /* Gestión del hijo */
+    justify-self: center;
+    align-self: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+}
